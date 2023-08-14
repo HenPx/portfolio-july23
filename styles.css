@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --gradient:  linear-gradient(90deg, rgba(255,180,212,1) 0%, rgba(255,235,153,1) 100%);
+}
+
+body{
+    min-height: 100vh;
+    font-size: large;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    background: rgb(255,180,212);
+    background-size: 200%;
+    background-image: var(--gradient);
+    animation: img-gradient 7s infinite alternate;
+}
+
+@keyframes img-gradient {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
+}
+
+.header{
+    background-color: transparent;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: center;
+}
+
+.ul-navbar{
+    position: fixed;
+    display: flex;
+    font-size: 18px;
+    list-style: none;
+    width: 80%;
+    justify-content: space-around;
+    z-index: 100;
+    background: rgb(244,207,223);
+    background: linear-gradient(90deg, rgba(244,207,223,1) 0%, rgba(245,229,229,1) 88%);
+    border-radius: 50px;
+    top: 10px;
+    padding: 8px;
+    letter-spacing: 1px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.li-navbar a{
+    text-decoration: none;
+    padding: 0px;
+    border-radius: 2px;
+    transition: .3s;
+    color: rgba(94, 94, 94, 0.733);
+    font-weight: normal;
+}
+
+.li-navbar a:hover{
+    border-bottom: 3px solid black;
+    color: rgb(61, 60, 60);
+    font-weight: bold;
+    transition: 0.05s;
+}
+
+.main{
+    padding: 20px;
+    min-height:100vh ;
+    text-align: center;
+    position: relative;
+    line-height: 40px;
+}
+
+.Title{
+    font-size: 70px;
+    letter-spacing: 2px;
+    line-height: 85px;
+    padding: 10px;
+}
+
+.sub-title{
+    line-height: 20px;
+}
+
+.profile img{
+    padding-top: 15px;
+    width: 500px;
+    height: 500px;
+    filter: grayscale(80%);
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.profile img:hover{
+    height: 500px;
+    width: 500px;
+    transform: scale(1.03);
+    filter: grayscale(20%);
+}
+
+.ul-profile{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.profile p{
+    padding-top: 20px;
+    line-height: 0px;
+}
+
+.ul-profile li{
+    letter-spacing: 1px;
+}
+
+.ul-profile li:hover{
+    color: rgb(255, 107, 132);
+}
+
+.work h2{
+    padding-top: 25px;
+    font-size: 30px;
+}
+
+.ul-work li{
+    font-size: 50px;
+    padding-top: 8px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.ul-work img{
+    width: 500px;
+    height: 500px;
+    border-radius: 8%;
+    overflow: hidden;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    filter: grayscale(80%);
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.ul-work img:hover{
+    height: 500px;
+    width: 500px;
+    transform: scale(1.03);
+    filter: grayscale(10%);
+}
+
+.port-link{
+    padding: 30px;
+    padding-bottom: 35px;
+}
+
+.port-link a{
+    background-color: rgb(250, 216, 231);
+    border-radius: 30px;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+    font-size: 25px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.port-link a:hover{
+    background-color: black;
+    color: pink;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);}
+
+.main-gabut{
+    line-height: 20px;
+}
+
+
+.ul-gabut{
+    list-style: none;
+    line-height: 40px;
+}
+
+.ul-gabut li{
+    font-size: 25px;
+    padding-top: 25px;
+}
+
+.ul-gabut li{
+    padding-bottom: 15px;
+    font-size: 50px;
+    word-spacing: 5px;
+    letter-spacing: 5px;
+}
+
+.ul-gabut p{
+    padding-top: -5px;
+}
+
+.ul-gabut img{
+    height: 500px;
+    width: 500px;
+    border-radius: 8%;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    filter: grayscale(80%);
+    transition: 0.5s ease;
+    cursor: pointer;
+
+}
+
+.ul-gabut img:hover{
+    height: 500px;
+    width: 500px;
+    transform: scale(1.03);
+    filter: grayscale(20%);
+}
+
+
+#footer{
+    padding: 30px;
+    min-height: 20vh;
+    text-align:center;
+}
+
+.subtitle-foot{
+    font-size: 25px;
+}
+
+.ul-foot{
+    padding: 10px;
+    line-height: 50px;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.ul-foot img{
+    padding: 30px;
+    height: 80px;
+    width: 80px;
+    overflow: hidden;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.ul-foot img:hover{
+    height: 80px;
+    width: 80px;
+    transform: scale(1.5);
+}
+
+.li-foot a{
+    text-decoration: none;
+    color: black;
+}
